@@ -4,16 +4,6 @@
   "version": "1.0.0",
   "description": "Dump DOM before refresh on mBank CompanyNet",
 
-  "permissions": [
-    "activeTab",
-    "downloads",
-    "storage"
-  ],
-
-  "host_permissions": [
-    "https://companynet.mbank.pl/*",
-    "http://localhost:3000/*"
-  ],
   "content_scripts": [
     {
       "matches": ["https://companynet.mbank.pl/*"],
@@ -25,8 +15,7 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "index.html",
-        "index.js"
+        "index.html"
       ],
       "matches": [
         "<all_urls>"
